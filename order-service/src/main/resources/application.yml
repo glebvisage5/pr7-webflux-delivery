@@ -1,0 +1,29 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: order-service
+  main:
+    banner-mode: off
+    log-startup-info: false
+  jackson:
+    serialization:
+      indent-output: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,shutdown
+  endpoint:
+    shutdown:
+      access: unrestricted
+
+logging:
+  level:
+    root: WARN
+    ru.pirksp: INFO
+    org.springframework.boot.web.embedded.netty.NettyWebServer: INFO
+  pattern:
+    console: "%d{HH:mm:ss.SSS} %-5level [%18.18thread] %msg%n"

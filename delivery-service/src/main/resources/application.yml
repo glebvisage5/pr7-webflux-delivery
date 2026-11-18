@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: delivery-service
+  main:
+    banner-mode: off
+    log-startup-info: false
+  jackson:
+    serialization:
+      indent-output: true
+    default-property-inclusion: non_null
+
+app:
+  order-service:
+    url: ${ORDER_SERVICE_URL:http://localhost:8081}
+    timeout: ${ORDER_SERVICE_TIMEOUT:2s}
+  # шаг «курьера» в потоке SSE (как интервал 700 мс в delivery.track из ПР4)
+  courier-step: 700ms
+
+logging:
+  level:
+    root: WARN
+    ru.pirksp: INFO
+    org.springframework.boot.web.embedded.netty.NettyWebServer: INFO
+  pattern:
+    console: "%d{HH:mm:ss.SSS} %-5level [%18.18thread] %msg%n"

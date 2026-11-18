@@ -1,0 +1,11 @@
+{
+  "orderId": 3,
+  "deliveryDatetime": "2026-11-18T20:00:00",
+  "darkstoreId": 1,
+  "status": "ASSEMBLY",
+  "goods": [
+    { "goodId": 3, "count": 4 },
+    { "goodId": 7, "count": 6 },
+    { "goodId": 4, "count": 2 }
+  ]
+}

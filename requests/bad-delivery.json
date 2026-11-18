@@ -1,0 +1,7 @@
+{
+  "darkstoreId": 1,
+  "goods": [
+    { "goodId": 3, "count": 2 },
+    { "goodId": 42, "count": 1 }
+  ]
+}

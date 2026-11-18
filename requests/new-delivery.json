@@ -1,0 +1,9 @@
+{
+  "orderId": 3,
+  "deliveryDatetime": "2026-11-18T19:30:00",
+  "darkstoreId": 1,
+  "goods": [
+    { "goodId": 3, "count": 4 },
+    { "goodId": 7, "count": 6 }
+  ]
+}
